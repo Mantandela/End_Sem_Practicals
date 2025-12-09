@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Lookup</title>
+  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h2>Weather Lookup</h2>
+
+    <div class="search-section">
+      <label for="cityInput" class="hidden">City Name</label>
+      <input type="text" id="cityInput" placeholder="Enter city name..." aria-label="City name" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading" class="hidden">Loading...</div>
+
+    <div id="weatherResult" class="hidden">
+      <h3 id="cityName"></h3>
+      <p>Temperature: <span id="temp"></span> °C</p>
+      <p>Wind Speed: <span id="wind"></span> km/h</p>
+      <img id="icon" alt="Weather icon" />
+    </div>
+
+    <div id="errorMsg" class="error hidden"></div>
+  </div>
+
+ 
+</body>
+</html>
